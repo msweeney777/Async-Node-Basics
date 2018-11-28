@@ -9,10 +9,17 @@ const argv = yargs
       describe: 'Address to fetch weather for',
       string: true
     }
-});
+  })
+
+  .help()
+  .alias('help', 'h')
+  .argv;
+
+var encodedAddress = encodeURIComponent(argv.address);
+
 
 request({
-  url: 'http://www.mapquestapi.com/geocoding/v1/address?key=uuTltY0BG2CHeJgUkWzPEHHAlW3GzZyW&location=1301%20lombard%20street%20philadelphia',
+  url: `http://www.mapquestapi.com/geocoding/v1/address?key=uuTltY0BG2CHeJgUkWzPEHHAlW3GzZyW&location=${encodedAddress}`,
   json: true
 }, (error, response, body) => {
   console.log(`Address: ${body.results[0].providedLocation.location}`);
