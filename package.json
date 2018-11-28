@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msweeney777/Async-Node-Basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msweeney777/Async-Node-Basics/issues"
+  },
+  "homepage": "https://github.com/msweeney777/Async-Node-Basics#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
