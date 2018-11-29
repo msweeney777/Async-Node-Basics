@@ -1,7 +1,7 @@
 const request = require('request');
 
 var geocodeAddress = (address) => {
-  var encodedAddress = encodeURIComponent(argv.address);
+  var encodedAddress = encodeURIComponent(address);
 
 
   request({
